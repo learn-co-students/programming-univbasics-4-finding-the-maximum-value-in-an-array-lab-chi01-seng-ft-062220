@@ -1,7 +1,7 @@
 def find_max_value(array)
   count = 0 
   max_value = -1
-  while count < array.length do
+  for i in array
     if max_value < array[count]
       max_value = array[count]
     end
@@ -10,6 +10,6 @@ def find_max_value(array)
   max_value
 end
 
-scale = [2,3,4,5]
+hill = [1,2,3,4,5,4,3,2,1]
 
-find_max_value(scale)
+find_max_value(hill)
